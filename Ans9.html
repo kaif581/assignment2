@@ -1,0 +1,61 @@
+<html>
+	<head><title>Form Validation</title>
+		<style>
+			.form{
+				height:100%;
+				width:100%;
+				background:gray;
+				position:absolute;
+			}
+			.field{
+				height:350px;
+				width:200px;
+				background:white;
+				margin:7% 20%;
+				padding:7% 7%;
+				position:relative;
+			}
+			.input-field{
+				margin:10px;
+				padding:10px;
+				
+			}
+			.submit-btn{
+				margin:10px;
+				padding:10px;
+				width:100%;
+				background:linear-gradient(to left, pink, lightgreen);
+				border-radius:10px;
+				outline:none;
+				border:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form">
+			<div class="field">
+			<center><h1 style="margin-top:-50px; color:blue">Redirect Page</h1></center>
+				<form name="myform">
+					<input type="text" name="name" placeholder="Enter Your Name" autocomplete="off" class="input-field" required id="name">
+					<input type="password" name="pass" placeholder="Enter Your Password" autocomplete="off" class="input-field" required id="pass">
+					<input type="submit" value="Submit" class="submit-btn" onclick="myform()">
+				</form>
+			</div>
+		</div>
+		
+		<script>
+			var name=document.getElementById("name");
+			var pass=document.getElementById("pass");
+			function myform(){
+				var name='mdkaif';
+				var pass='1234';
+				if(name==mdkaif && pass=='1234'){
+					document.write('Hello Kaif');
+				}
+				else{
+					document.write('No page');
+				}
+			}
+		</script>
+	</body>
+</html>

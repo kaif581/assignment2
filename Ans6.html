@@ -1,0 +1,33 @@
+<html>
+	<head><title>Loaded Page</title>
+		<style>
+			#loading{
+				background-image:url('img.gif');
+			}
+			.load{
+				position:fixed;
+				z-index:99;
+				
+			}
+		</style>
+	
+		<script>
+			
+				var x=document.getElementById('loading');
+				
+				function myload(){
+					x.style.display='none';
+				}
+		</script>
+	</head>
+	
+	<body onload="myload()">
+		<img src="img.gif" id="loading" class="load">
+		<div class="imge1">
+			<img class="img1" src="download (6).jpg">
+			<img class="img1" src="download (7).jpg">
+			<img class="img1" src="download (8).jpg">
+			<img class="img1" src="download (9).jpg">
+		</div>
+	</body>
+</html>

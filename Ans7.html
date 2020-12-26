@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<meta http-equiv="refresh" content="5; url=/color.html">
+	</head>
+	<body>
+		<script>
+			let counter = document.querySelector('h1');
+			let count = 1;
+			setInterval(()=>{
+				counter.innerText = count;
+				count++;
+			},1000)
+		</script>
+		<h1 style="text-align:center">Counter</h1>
+	</body>
+</html>

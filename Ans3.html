@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Simple Form</title>
+		<style>
+			.field{
+				height:100vh;
+				width:100%;
+				overflow:hidden;
+				background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+				position:absolute;
+			}
+			.input-fill{
+				height:300px;
+				width:250px;
+				margin:6% 20%;
+				padding:7% 7%;
+				background:white;
+				position:relative;
+			}
+			.input-field{
+				padding:10px;
+				margin:10px;
+				width:100%;
+				border-left:none;
+				border-top:none;
+				border-right:none;
+				border-bottom:1px solid pink;
+				outline:none;
+			}
+			.submit-btn{
+				padding:10px;
+				margin:10px;
+				width:100%;
+				border-radius:10px;
+				background:linear-gradient(to left, pink,lightgreen);
+				outline:none;
+				border:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="field">
+			<div class="input-fill">
+			<center><h1 style="margin-top:-30px;">Form</h1><center>
+				<form action="" method="GET">
+					<input type="text" name="name" placeholder="Enter Name" class="input-field" autocomplete="off" required>
+					<input type="text" name="age" placeholder="Enter Age" class="input-field" autocomplete="off" required>
+					<input type="text" name="add" placeholder="Enter Address" class="input-field" autocomplete="off">
+					<input type="text" name="sub" placeholder="Enter Favorite Subject" class="input-field" autocomplete="off" required>
+					<input type="text" name="movie" placeholder="Enter Favorite Movie" class="input-field" autocomplete="off" required>
+					<input type="submit" name="submit" value="Submit" class="submit-btn">
+				</form>
+			</div>
+		</div>
+	<body>
+</html>
